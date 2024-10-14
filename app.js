@@ -10,12 +10,8 @@ const navToggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.links');
 
 navToggle.addEventListener('click', () => {
-    //    stabilisco una condizione per aggiungere o togliere la classe che mostra i link
-    if (links.classList.contains('show-links')) {
-        links.classList.remove('show-links');
-    } else {
-        links.classList.add('show-links');
-    }
+    // uso un metodo per mettere e togliere la classe alla lista di link
 
+    links.classList.toggle('show-links');
 
 });
